@@ -1,0 +1,22 @@
+app:
+  connection-detail:
+    url: jdbc:mysql://${DATABASE_HOST:localhost}:${DATABASE_PORT:3306}/${DATABASE_NAME:oidc}
+    user-name: ${DATABASE_USERNAME:root}
+    password: ${DATABASE_PASSWORD:test}
+
+spring:
+  application:
+    name: AuthServer
+
+logging:
+  level:
+    org:
+      springframework:
+        security: ${SPRING_SECURITY_LOG_LEVEL:DEBUG}
+        jdbc:
+          core:
+            JdbcTemplate: DEBUG
+            StatementCreatorUtils: TRACE
+
+  pattern:
+    console: ${LOGPATTERN_CONSOLE:%green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %msg%n}
