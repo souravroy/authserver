@@ -16,10 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.security.oauth2.core.ClientAuthenticationMethod;
 import org.springframework.security.oauth2.core.AuthorizationGrantType;
 
+import static com.db2rest.oauth2.authserver.rest.Oauth2RestApi.VERSION;
+
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/clients")
+@RequestMapping("/api" + VERSION + "/clients")
 public class ClientRegistrationController {
     private final RegisteredClientRepository registeredClientRepository;
 
