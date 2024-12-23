@@ -1,0 +1,6 @@
+app:
+  connection-detail:
+    url: jdbc:mysql://${DATABASE_HOST:localhost}:${DATABASE_PORT:3306}/${DATABASE_NAME:oidc}
+    user-name: ${DATABASE_USERNAME:root}
+    password: ${DATABASE_PASSWORD:test}
+    driver-class-name: ${DRIVER_CLASS_NAME:com.mysql.cj.jdbc.Driver}

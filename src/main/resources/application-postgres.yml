@@ -1,0 +1,6 @@
+app:
+  connection-detail:
+    url: jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/${DATABASE_NAME:oidc}
+    user-name: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:132kjg5J}
+    driver-class-name: ${DRIVER_CLASS_NAME:org.postgresql.Driver}

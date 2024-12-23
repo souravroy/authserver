@@ -30,7 +30,7 @@ public class JdbcConfiguration {
         config.setJdbcUrl(connectionDetail.getUrl());
         config.setUsername(connectionDetail.getUserName());
         config.setPassword(connectionDetail.getPassword());
-        config.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        config.setDriverClassName(connectionDetail.getDriverClassName());
 
         config.setAutoCommit(false);
         return new HikariDataSource(config);

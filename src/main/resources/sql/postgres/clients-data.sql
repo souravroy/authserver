@@ -1,4 +1,4 @@
-INSERT INTO oidc.oauth2_registered_client
+INSERT INTO public.oauth2_registered_client
     (id,
     client_id,
     client_id_issued_at,
@@ -12,12 +12,12 @@ INSERT INTO oidc.oauth2_registered_client
     scopes,
     client_settings,
     token_settings)
-VALUES('57eb0741-5b25-4b1a-8044-520021ad3cc1',
+VALUES('dae0e804-b46b-49ea-b1ff-46890d621cff',
     'oidcClient',
-    '2024-12-22 12:42:55',
+    '2024-12-23 20:17:52.146',
     NULL,
     NULL,
-    '57eb0741-5b25-4b1a-8044-520021ad3cc1',
+    'dae0e804-b46b-49ea-b1ff-46890d621cff',
     'none',
     'authorization_code',
     'https://oauth.pstmn.io/v1/callback',
